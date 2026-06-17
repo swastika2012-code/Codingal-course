@@ -4,37 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style2.css">
 <body>
 
-    <h1>My Weather App Homepage</h1>
+    <h1>My Weather App</h1>
+    <style>
+        
+* {
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-    <p class="subtitle">
-        Check today's weather and plan your day better.
-    </p>
+body {
+background-color: #247adc;
+background-image: radial-gradient(circle, white 2px, transparent 3px);
+background-size: 40px 40px;
+background-position: top center;
+color: white;
+text-align: center;
+}
+
+h1 {
+font-size: 45px;
+color: black;
+}
+ h2 {
+    font-size: 40px;
+color:  rgb(67, 67, 253);
+ }
+
+ h3 {
+    font-size: 30px;
+    color: #0a1970;
+ }
+.weather-card {
+width: 425px;
+border: 5px solid white;
+border-radius: 20x;
+background-image: linear-gradient(to top, #072b52, #3253d5);
+}
+
+.weather-icon {
+font-size: 65px;
+animation: floatCloud 2.5s infinite alternate-reverse;
+
+}
+
+#temperature {
+font-size: 50px;
+font-weight: bold;
+color: #4d91ea;
+}
+
+.details {
+font-size: 20px;
+color:white;
+}
+
+.forecast-section {
+border: 5px solid black;
+border-radius: 5px;
+background-image: linear-gradient(to top, #1d6cc1, #637ff0);
+}
+
+.day {
+font-size: 25px;
+color: #043c9c;
+}
+
+@keyframes floatCloud {
+from {
+transform: translateY(0);
+}
+
+to {
+transform: translateY(20px);
+}
+}
+</style>
 
     <div class="weather-card">
         <h2>Today's Weather</h2>
 
-        <div class="weather-icon">Cloud</div>
+        <div class="weather-icon">Clear</div>
 
-        <p id="temperature">28°C</p>
+        <p id="temperature">22°C</p>
 
-        <p class="details">City: Bengaluru</p>
-        <p class="details">Condition: Partly Cloudy</p>
-        <p class="details">Humidity: 62%</p>
-        <p class="details">Wind Speed: 12 km/h</p>
+        <p class="details">Current place:Kathmandu</p>
+        <p class="details">Condition: Mostly Clear</p>
+        <p class="details">Humidity: 94%</p>
     </div>
 
-    <h2>Weekly Forecast</h2>
+    <h1>Weekly Forecast</h1>
 
     <div class="forecast-section">
         <h3 class="forecast-title">Next 5 Days</h3>
 
-        <p class="day">Monday: Sunny - 30°C</p>
-        <p class="day">Tuesday: Cloudy - 27°C</p>
-        <p class="day">Wednesday: Rainy - 24°C</p>
-        <p class="day">Thursday: Windy - 26°C</p>
-        <p class="day">Friday: Stormy - 23°C</p>
+        <p class="day">Thursday: Sunny, 20°- 29°C</p>
+        <p class="day">Friday: Cloudy, 21°- 29°C</p>
+        <p class="day">Saturday: Rainy, 21°- 28°</p>
+        <p class="day"> Sunday: Rainy, 21°- 28°</p>
+        <p class="day">Monday: Cloudy, 21°- 29°C</p>
     </div>
 
 </body>
